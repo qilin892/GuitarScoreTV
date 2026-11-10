@@ -1,0 +1,29 @@
+# 弦谱曲库服务（Node.js）
+# 安装：cp guitartv.service /etc/systemd/system/ && systemctl daemon-reload
+#      systemctl enable --now guitartv
+[Unit]
+Description=GuitarScoreTV guitar score library
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# 建议用普通用户运行，并确保该用户对 data 目录有写权限
+User=www
+Group=www
+WorkingDirectory=/srv/guitartv
+Environment=NODE_ENV=production
+Environment=PORT=8098
+Environment=HOST=127.0.0.1
+Environment=BASE_PATH=/guitar
+Environment=DATA_DIR=/srv/guitartv/data
+ExecStart=/usr/bin/node /srv/guitartv/server.js
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ReadWritePaths=/srv/guitartv/data
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,23 @@
+# 运行数据：曲库内容与上传的琴谱图片属于本地私有数据，不入库
+server/data/
+
+# 依赖与构建产物
+server/node_modules/
+tv-app/.gradle/
+tv-app/build/
+tv-app/app/build/
+tv-app/local.properties
+
+# 部署脚本内含服务器凭据，仅本地保留
+tools/
+
+# 原始截图素材：仓库只保留 docs/screenshots 下的精选图
+/screenshots/
+
+# 编辑器与系统杂项
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+hs_err_pid*.log

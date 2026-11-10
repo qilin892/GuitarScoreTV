@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>弦谱 · 歌曲管理</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="./" aria-label="弦谱管理首页"><span class="brand-mark">弦</span><span>弦谱<small>SCORE LIBRARY</small></span></a>
+    <div class="server-state"><i></i><span>本机曲库服务</span><code id="server-address">正在读取…</code></div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">GUITAR SCORE ARCHIVE / 01</p>
+      <h1 id="page-title">把琴谱，<br>放上电视。</h1>
+      <p class="intro-copy">在这里整理歌曲与琴谱。电视端会自动读取曲库，每屏并排显示两页。</p>
+      <div class="rule-note"><span>双页阅读</span><span>遥控翻页</span><span>纯净常亮</span></div>
+    </section>
+
+    <section class="workspace" aria-label="歌曲管理工作区">
+      <form id="song-form" class="composer">
+        <div class="section-heading"><span>01</span><h2>新建歌曲</h2></div>
+        <label>歌曲名称<input name="title" required maxlength="100" placeholder="例如：童年"></label>
+        <label>歌手 / 作者<input name="artist" maxlength="100" placeholder="选填"></label>
+        <label class="file-field" for="images"><span class="file-title">添加琴谱图片</span><span id="file-summary">JPG、PNG、WebP；按选择顺序排页</span><input id="images" name="images" type="file" accept="image/jpeg,image/png,image/webp" multiple required></label>
+        <input id="admin-token" type="password" autocomplete="off" placeholder="管理密码（仅服务器设置后需要）" hidden>
+        <button class="primary" type="submit">创建并上传 <span>↗</span></button>
+        <p id="form-status" class="status" role="status"></p>
+      </form>
+
+      <section class="library" aria-labelledby="library-title">
+        <div class="section-heading"><span>02</span><h2 id="library-title">当前曲库</h2><b id="song-count">0 首</b></div>
+        <div id="song-list" class="song-list" aria-live="polite"><p class="empty">正在读取曲库…</p></div>
+      </section>
+    </section>
+  </main>
+
+  <footer><span>弦谱 / 曲库自持</span><span>电视端服务器地址请与上方地址保持一致</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

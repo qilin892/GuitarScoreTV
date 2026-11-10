@@ -5,7 +5,7 @@
 
 电视上看吉他谱。后台传谱，电视上一屏两页，遥控器翻页。
 
-![电视双页阅读](docs/screenshots/tv-reader.png)
+![电视双页阅读](docs/screenshots/tv-reader.webp)
 
 ## 功能
 
@@ -25,7 +25,34 @@
 - 顶部显示电视端该填的地址
 - 可以部署在根路径，也可以部署在 `/guitar/` 这类子路径
 
-截图：[后台](docs/screenshots/web-admin.png)、[曲库](docs/screenshots/tv-library.png)、[第二屏](docs/screenshots/tv-reader-page2.png)、[设置](docs/screenshots/tv-settings.png)、[桌面入口](docs/screenshots/tv-launcher.png)
+## 截图
+
+<table>
+  <tr>
+    <td><img src="docs/screenshots/web-admin.webp" width="420" alt="电脑后台"></td>
+    <td><img src="docs/screenshots/web-admin-mobile.webp" width="180" alt="手机后台"></td>
+  </tr>
+  <tr>
+    <td>电脑后台：新建歌曲、批量传图、追加或删歌</td>
+    <td>手机打开同一个后台</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/tv-library.webp" width="420" alt="电视曲库"></td>
+    <td><img src="docs/screenshots/tv-reader-page2.webp" width="420" alt="第二屏"></td>
+  </tr>
+  <tr>
+    <td>电视曲库，上下键选，OK 打开</td>
+    <td>下键翻到 03-04，左右两页同时换</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/tv-reader.webp" width="420" alt="双页阅读"></td>
+    <td><img src="docs/screenshots/tv-launcher.webp" width="420" alt="桌面入口"></td>
+  </tr>
+  <tr>
+    <td>一屏两页，对应谱本左右页</td>
+    <td>装在盒子上，桌面底栏直接进</td>
+  </tr>
+</table>
 
 ## 快速开始
 

@@ -1,5 +1,9 @@
 # 弦谱 GuitarScoreTV
 
+[![Release](https://img.shields.io/github/v/release/qilin892/GuitarScoreTV?label=release)](https://github.com/qilin892/GuitarScoreTV/releases/latest)
+[![Platform](https://img.shields.io/badge/platform-Android%20TV-3ddc84)](tv-app)
+[![APK](https://img.shields.io/badge/APK-95%20KB-e06438)](dist)
+
 > 把吉他谱放上电视，左右双页、遥控翻页、纯净常亮。
 
 一套自持曲库的电视吉他谱阅读方案：浏览器后台上传歌曲与琴谱，Android TV 端像翻纸质谱本一样，
@@ -63,6 +67,8 @@ node server.js          # Windows 下也可双击 start-server.bat
 曲库数据落在 `server/data/`（`songs.json` + `uploads/`），备份复制整个目录即可。
 
 ### 2. 装电视端
+
+从 [Releases](https://github.com/qilin892/GuitarScoreTV/releases/latest) 下载 `GuitarScoreTV-v1.1.0.apk`，或直接用仓库里的 `dist/`：
 
 ```bash
 adb install -r dist/GuitarScoreTV-v1.1.0.apk

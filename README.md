@@ -30,27 +30,19 @@
 <table>
   <tr>
     <td><img src="docs/screenshots/web-admin.webp" width="420" alt="电脑后台"></td>
-    <td><img src="docs/screenshots/web-admin-mobile.webp" width="180" alt="手机后台"></td>
+    <td><img src="docs/screenshots/tv-library.webp" width="420" alt="电视曲库"></td>
   </tr>
   <tr>
     <td>电脑后台：新建歌曲、批量传图、追加或删歌</td>
-    <td>手机打开同一个后台</td>
-  </tr>
-  <tr>
-    <td><img src="docs/screenshots/tv-library.webp" width="420" alt="电视曲库"></td>
-    <td><img src="docs/screenshots/tv-reader-page2.webp" width="420" alt="第二屏"></td>
-  </tr>
-  <tr>
     <td>电视曲库，上下键选，OK 打开</td>
-    <td>下键翻到 03-04，左右两页同时换</td>
   </tr>
   <tr>
     <td><img src="docs/screenshots/tv-reader.webp" width="420" alt="双页阅读"></td>
-    <td><img src="docs/screenshots/tv-launcher.webp" width="420" alt="桌面入口"></td>
+    <td><img src="docs/screenshots/tv-reader-page2.webp" width="420" alt="第二屏"></td>
   </tr>
   <tr>
     <td>一屏两页，对应谱本左右页</td>
-    <td>装在盒子上，桌面底栏直接进</td>
+    <td>下键翻到 03-04，左右两页同时换</td>
   </tr>
 </table>
 
